@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container{
+      display: grid;
+      height: 748px;
+      width:748px;
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+      background-color: #000;
+      gap:9px ;
+      grid-template-areas: 
+        "box1 box2 box2 box2 "
+        "box3 box4 box4 box5"
+        "box3 box4 box4 box6 "
+        "box7 box8 box9 box6"
+        ;
+    }
+   
+   .b1 {
+  background-color: #E72F24; /* Red */
+  grid-area: box1;
+}
+
+.b2 {
+  background-color: #F0F1EC; /* White */
+  grid-area: box2;
+}
+
+.b3 {
+  background-color: #F0F1EC; /* White */
+  grid-area: box3;
+}
+
+.b4 {
+  background-color: #F0F1EC; /* White */
+  grid-area: box4;
+}
+
+.b5 {
+  background-color: #004592; /* Blue */
+  grid-area: box5;
+  border-bottom: 10px solid black;
+}
+
+.b6 {
+  background-color:  #F0F1EC; /* Yellow */
+  grid-area: box6;
+  
+}
+
+.b7 {
+  background-color:#F0F1EC; /* Black */
+  grid-area: box7;
+}
+
+.b8 {
+  background-color:yellow; /* White */
+  grid-area: box8;
+}
+
+.b9 {
+  background-color: black; /* White */
+  grid-area: box9;
+}
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="b1">1</div>
+    <div class="b2">2</div>
+    <div class="b3">3</div>
+    <div class="b4">4</div>
+    <div class="b5">5</div>
+    <div class="b6">6</div>
+    <div class="b7">7</div>
+    <div class="b8">8</div>
+    <div class="b9">9</div>
+    
+  </div>
+</body>
+
+</html>
